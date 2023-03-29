@@ -1,0 +1,150 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #d9a7c7, #fffcdc);
+    font-family: Open sans, Helvetica, sans-serif;
+    padding: clamp(20px, 5vw, 50px) 10px;
+}
+
+.global-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.input-group p {
+    font-size: 16px;
+    color: gray;
+    bottom: 0;
+}
+
+form p {
+    color: rgb(206, 68, 68);
+    position: relative;
+    bottom: 10px;
+    font-weight: 500;
+}
+
+input {
+    padding: 10px 0;
+    background: transparent;
+    border-style: none;
+    border-bottom: 1px solid whitesmoke;
+    caret-color: white;
+    color: white;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid whitesmoke;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+img {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 65%;
+    transform: translateY(-50%);
+}
+
+#passwordCheckSvg {
+    top: 45%;
+}
+
+.passwordStrength {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+}
+
+#low,
+#medium,
+#high {
+    display: none;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+
+#low {
+    border-top: 5px solid orange;
+    grid-column: 1;
+}
+
+#medium {
+    border-top: 5px solid yellow;
+    grid-column: 2;
+}
+
+#high {
+    border-top: 5px solid green;
+    grid-column: 3;
+}
+
+@media (width < 597px) {
+    #passwordCheckSvg {
+        top: 38%;
+    }
+}
+
+@media (width < 348px) {
+    #passwordCheckSvg {
+        top: 35%;
+    }
+
+    #passwordMatchSvg {
+        top: 75%;
+    }
+}
