@@ -65,7 +65,7 @@ input {
 
 input:focus {
     outline: none;
-    border-bottom: 2px solid whitesmoke;
+    box-shadow: 0 2px 0px rgba(255,255,255,1);
 }
 
 input::placeholder {

@@ -25,7 +25,7 @@
         placeholder="3 caractères minimum" 
         autocomplete="off" 
         >
-        <img id="nameCheck" src="ressources/error.svg" alt="">
+        <img id="nameCheck" src="ressources/error.svg" alt="icône de vérification">
       </div>
       <p id="errorMsgName"></p>
 
@@ -35,10 +35,10 @@
         type="email" 
         id="email" 
         placeholder="Votre email" 
-        autocomplete="nope"
+        autocomplete="off"
         >
         <!-- The value of autocomplete is whathever to avoid "forced" autocomplete -->
-        <img id="emailCheck" src="ressources/error.svg" alt="">
+        <img id="emailCheck" src="ressources/error.svg" alt="icône de vérification">
       </div>
       <p id="errorMsgEmail"></p>
 
@@ -50,13 +50,13 @@
         placeholder="Votre mot de passe" 
         autocomplete="off" 
         >
-        <img id="passwordCheckSvg" src="ressources/error.svg" alt="">
+        <img id="passwordCheckSvg" src="ressources/error.svg" alt="icône de vérification">
         <p>Au moins un symbole, un chiffre ainsi que 6 caractères minimum.</p>
       </div>
       <div class="passwordStrength">
-        <div id="low">faible</div>
-        <div id="medium">moyen</div>
-        <div id="high">fort</div>
+        <div id="low"><span>faible</span></div>
+        <div id="medium"><span>moyen</span></div>
+        <div id="high"><span>fort</span></div>
       </div>
 
       <div class="input-group">
@@ -67,7 +67,7 @@
         placeholder="Confirmez le mot de passe" 
         autocomplete="off" 
         >
-        <img id="passwordMatchSvg" src="ressources/error.svg" alt="">
+        <img id="passwordMatchSvg" src="ressources/error.svg" alt="icône de vérification">
       </div>
   
       <button type="submit">Création du compte</button>
